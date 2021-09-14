@@ -1,0 +1,67 @@
+html {
+    background-color: #78D8D8;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: (4, 1fr);
+    grid-template-rows: (3, 3fr);
+    grid-gap: 2em;
+    text-align: center;
+    grid-template-areas: 
+        "h h h h"
+        "s m m m"
+        "f g j k"
+    ;
+
+    margin: 0 200px 0 200px;
+}
+
+.title {
+    grid-area: h;
+    text-align: center;
+}
+
+
+.monster {
+    grid-area: s;
+    padding-top: 30px;
+    background-color: white;
+    height: 200px;
+}
+
+.welcome {
+    grid-area: m;
+    text-align: left;
+    background-color: white;
+    padding-left: 25px;
+
+}
+
+.parents {
+    grid-area: f;
+    background-color: white;
+    width: 230px;
+    height: 230px;
+}
+
+.customize {
+    grid-area: g;
+    background-color: white;
+    width: 230px;
+    height: 230px;
+}
+
+.level-up {
+    grid-area: j;
+    background-color: white;
+    width: 230px;
+    height: 230px;
+}
+
+.play {
+    grid-area: k;
+    background-color: white;
+    width: 230px;
+    height: 230px;
+}
